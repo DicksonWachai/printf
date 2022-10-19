@@ -2,7 +2,9 @@
 #define MAIN_H
 
 #include <stdarg.h>
-#include "main.h"
+#include <stdlib.h>
+#include <unistd.h>
+#include <limits.h>
 
 /**
  * struct print - structure to print various types
