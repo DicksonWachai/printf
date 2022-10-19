@@ -1,7 +1,7 @@
 /**
  * File - putchar
  *
- * Author: Anthony Ndegwa & Dickson Wachai
+ * Author: Anthony Ndegwa and Dickson Wachai
  */
 #include <unistd.h>
 #include "main.h"
