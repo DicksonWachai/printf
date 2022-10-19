@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-i
+
 /**
  * print_c - prints a char
  * @c: char to be printed
