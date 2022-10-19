@@ -1,3 +1,8 @@
+/**
+ * File - print_chars
+ *
+ * Author: Anthony Ndegwa and Dickson Wachai
+ */
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
