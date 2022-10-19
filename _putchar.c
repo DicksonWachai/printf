@@ -1,3 +1,8 @@
+/**
+ * File - printf.c
+ *
+ * Author: Anthony Ndegwa & Dickson Wachai
+ */
 #include <unistd.h>
 #include "main.h"
 /**
