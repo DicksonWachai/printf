@@ -1,3 +1,8 @@
+/**
+ * File - print_hex
+ *
+ * Author: Anthony Ndegwa and Dickson Wachai
+ */
 #include "main.h"
 
 /**
