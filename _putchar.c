@@ -1,5 +1,5 @@
 /**
- * File - printf.c
+ * File - putchar
  *
  * Author: Anthony Ndegwa & Dickson Wachai
  */
