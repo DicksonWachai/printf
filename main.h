@@ -33,8 +33,5 @@ int print_p(va_list p);
 int print_S(va_list S);
 int print_r(va_list r);
 int print_R(va_list R);
-char *_memcpy(char *dest, char *src, unsigned int n);
-char *rev_string(char *s);
-int print_reversed(va_list arg)
 
 #endif
