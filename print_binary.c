@@ -14,7 +14,7 @@ int print_binary(unsigned int b)
 
 	if (b == 0)
 	{
-		_putchar('0')
+		_putchar('0');
 	}
 	while (b > 0)
 	{
