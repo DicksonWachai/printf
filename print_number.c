@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-#include <stdarg.h>
+#include <limits.h>
 /**
  * print_number - print a decimal (base 10) number
  * @d: the decimal number
@@ -18,6 +18,21 @@ int print_number(int num)
 		_putchar('-');
 		count++;
 		num *= -1;
+	}
+	else if(num == INT_MIN)
+	{
+		_putchar('-');
+		count++;
+		num = INT_MAX;
+		while (num > 0)
+		{
+			digit = num % 10;
+			_putchar('0' + digit);
+			count++;
+			num /= 10;
+		}
+		_putchar('1');
+		count++;
 	}
 	else if (num == 0)
 	{
