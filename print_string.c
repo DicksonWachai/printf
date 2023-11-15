@@ -10,6 +10,8 @@ int print_string(const char *str)
 {
 	int count = 0;
 
+	if (str == NULL)
+		str = "(null)";
 	while (*str != '\0')
 	{
 		_putchar(*str);
