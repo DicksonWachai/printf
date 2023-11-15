@@ -6,7 +6,7 @@
  *
  * Return: the count
  */
-int print_char(int c)
+int print_char(char c)
 {
 	_putchar(c);
 	return (1);
