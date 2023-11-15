@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdarg.h>
 /**
  * print_decimal - print a decimal (base 10) number
  * @d: the decimal number

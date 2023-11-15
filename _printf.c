@@ -10,7 +10,6 @@
 int _printf(const char *format, ...)
 {
 	int count = 0;
-	int num;
 
 	va_list args;
 
@@ -34,14 +33,10 @@ int _printf(const char *format, ...)
 					count++;
 					break;
 				case 'd':
-					num = va_arg(args, int);
-					_putchar(num);
-					count++;
+					count += print_decimal(va_arg(args, int));
 					break;
 				case 'i':
-					num = va_arg(args, int);
-					_putchar(num);
-					count++;
+					count += print_integer(va_arg(args, int));
 					break;
 				default:
 					_putchar('%');
