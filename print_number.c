@@ -11,6 +11,7 @@ int print_number(int num)
 {
 	int count = 0;
 	int divisor = 1;
+	int digit;
 
 	if (num < 0)
 	{
@@ -22,18 +23,19 @@ int print_number(int num)
 	{
 		_putchar('0');
 		count++;
+		return (count);
 	}
-	else if (num > 0 && num < 9)
+	while (num / divisor > 9)
 	{
-		_putchar('0' + num);
+		divisor *= 10;
+	}
+	while (divisor != 0)
+	{
+		digit = num / divisor;
+		_putchar('0' + digit);
 		count++;
-	}
-	else
-	{
-		while (num / divisor > 9)
-		{
-			divisor *= 10;
-		}
-	}
+		num %= divisor;
+		divisor /= 10;
+	}	
 	return (count);
 }
