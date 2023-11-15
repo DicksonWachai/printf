@@ -49,3 +49,9 @@ int _printf(const char *format, ...)
 	va_end(args);
 	return (count);
 }
+int main() {
+    int count = _printf("Hello, %s! The character is %c. This is a percentage sign: %%\n", "World", 'A');
+    printf("\nTotal characters printed: %d\n", count);
+
+    return 0;
+}
