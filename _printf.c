@@ -10,6 +10,7 @@
 int _printf(const char *format, ...)
 {
 	int count = 0;
+	int num;
 
 	va_list args;
 
@@ -30,6 +31,16 @@ int _printf(const char *format, ...)
 					break;
 				case '%':
 					_putchar('%');
+					count++;
+					break;
+				case 'd':
+					num = va_arg(args, int);
+					_putchar(num);
+					count++;
+					break;
+				case 'i':
+					num = va_arg(args, int);
+					_putchar(num);
 					count++;
 					break;
 				default:
