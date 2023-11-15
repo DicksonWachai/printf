@@ -10,7 +10,6 @@
 int _printf(const char *format, ...)
 {
 	int count = 0;
-	const char *str;
 
 	va_list args;
 
@@ -24,17 +23,10 @@ int _printf(const char *format, ...)
 			switch (*format)
 			{
 				case 'c':
-					_putchar(va_arg(args, int));
-					count++;
+					count += print_char(va_arg(args, int));
 					break;
 				case 's':
-					str = va_arg(args, char*);
-					while (*str != '\0')
-					{
-						_putchar(*str);
-						str++;
-						count++;
-					}
+					count += print_string(va_arg(args, char *));
 					break;
 				case '%':
 					_putchar('%');
