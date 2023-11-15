@@ -12,6 +12,10 @@ int print_binary(unsigned int b)
 	int i = 0;
 	int j, count;
 
+	if (b == 0)
+	{
+		_putchar('0')
+	}
 	while (b > 0)
 	{
 		binaryNum[i++] = b % 2;
