@@ -8,18 +8,22 @@
  */
 static int hex_print(char c)
 {
-	int count;
-	char diff = 'A' - ':';
-	char d[2];
+	int count = 0;
+	unsigned char d[2];
 
-	d[0] = c / 16;
-	d[1] = c % 16;
-	for (count = 0; count < 2; count++)
+	d[0] = (c >> 4) & 0xF;
+	d[1] = c & 0xF;
+	while (count < 2)
 	{
 		if (d[count] >= 10)
-			_putchar('0' + diff + d[count]);
+		{
+			_putchar('A' + (d[count] - 10));
+		}
 		else
+		{
 			_putchar('0' + d[count]);
+		}
+		count++;
 	}
 	return (count);
 }
