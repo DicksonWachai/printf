@@ -10,6 +10,7 @@
 int _printf(const char *format, ...)
 {
 	int count = 0;
+	const char *str;
 
 	va_list args;
 
@@ -51,6 +52,9 @@ int _printf(const char *format, ...)
 				case 'X':
 					count += print_hexa(va_arg(args, unsigned int), 1);
 					break;
+				case 'S':
+					count += print_S(va_arg(args, char *);
+							break;
 				default:
 					_putchar('%');
 					_putchar(*format);
